@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factorial Calculator with FAQs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dark-mode-toggle">
+    <button id="darkModeButton">🌙</button>
+  </div>
+
+  <div class="calculator-container">
+    <h1>Factorial Calculator</h1>
+    <input type="number" id="numberInput" placeholder="Enter a positive integer">
+    
+    <div class="method-selection">
+      <label><input type="radio" name="method" value="iterative" checked> Iterative</label>
+      <label><input type="radio" name="method" value="recursive"> Recursive</label>
+    </div>
+
+    <button onclick="calculateFactorial()">Calculate</button>
+    <div id="result"></div>
+  </div>
+
+  <div class="faq-container">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-item">
+      <div class="faq-question">What is a factorial?</div>
+      <div class="faq-answer">A factorial of a non-negative integer n is the product of all positive integers less than or equal to n. It is denoted by n!.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How does the iterative method work?</div>
+      <div class="faq-answer">The iterative method calculates the factorial using a loop, multiplying the numbers sequentially.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How does the recursive method work?</div>
+      <div class="faq-answer">The recursive method calculates the factorial by calling itself with a decremented value until it reaches the base case (n = 0 or 1).</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
